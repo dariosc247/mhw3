@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <title>MHW3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mhw3.css">
+    <link rel="icon" type="images/x-icon" href="./images/logo.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="styles heet">
+    <script src="mhw3.js" defer="true"></script>
+    </head>
+
+    <nav class="n">
+        <div id="menu">
+          <div></div> <div></div> <div></div>
+        </div>
+        <a href=""><img src="./images/logo.png"></a>
+        <div id="links">
+          <a href="">HOME</a>
+          <a href="">INFO</a>
+          <a href="">SHOP</a>
+          <a href="">CONTATTI</a>
+          <a class="button">PRENOTA IL CAMPO</a>
+        </div>
+    </nav>
+    
+    <header class="header">
+        <div id="overlay"></div>
+        <div id="titolone">PITCH ADVISOR</div>
+    </header>
+
+    <body>
+
+        <a href="">
+            <figure id="logoetag">
+              <img src="./images/logo.png" id="logo">
+              <figcaption id="tag"><br/>@pitchadvisor</figcaption>
+            </figure>
+        </a>
+
+        <section class="s">
+
+            <div class="container">
+                <div class="number">1.</div>
+                <div class="item">
+                    <h1 class="titolo">ETNA PADEL CENTER</h1>
+                    <p class="paragrafo">
+                    Tra i campi in cui ho giocato (sia tornei che partitelle), è sempre stato il migliore.
+                    Due campi a 5, due campi a 7, spogliatoi e bagni puliti e ordinati.
+                    Spesso danno anche la possibilità di giocare oltre la fascia oraria designata
+                    (compatibilmente con le prenotazioni di altre persone per lo stesso campo).
+                    <p class="paragrafetto">Voto: 9.5</p>
+                    </p>
+                    <address id="a_sec">Via Alessandro Volta, 6 San Giovanni la Punta (CT)</address>
+                    <p class="commento">Consigliatissimo.</p>
+                    
+                    <img src="./images/campo_etna.jpg">
+                </div>
+      
+            </div>
+      
+            <div class="container">
+      
+                <div class="number">2.</div>
+                <div class="item">
+                    <h1 class="titolo">ZENIA SPORTING CENTER</h1>
+                    <p class="paragrafo">
+                    Struttura moderna, con un solo campo a 7 e un solo campo a 5.
+                    Personale molto disponibile, spesso fanno anche rimanere ben più dell'ora designata per la partita
+                    (in relazione anche alla fascia oraria scelta). 
+                    <p class="paragrafo">Voto: 9</p>
+                    </p>
+                    <address id="a_sec">Via Simeto, 5 San Gregorio di Catania (CT)</address>
+                    <p class="commento">Consigliatissimo.</p>
+                    
+                    <img src="./images/campo_zenia.jpg">
+                </div>
+      
+            </div>
+      
+            <div class="container">
+      
+                <div class="number">3.</div>
+                <div class="item">
+                    <h1 class="titolo">I CAMPETTI</h1>
+                    <p class="paragrafo">
+                    Fino a non molto tempo fa era il campo di riferimento per qualunque partita.
+                    Dopo la pandemia hanno però aumentato il prezzo e cominciato ad essere molto più fiscali sul rispetto dell'orario.
+                    Ciononostante, la struttura -che presenta 3 campi di calcio a 7 e un campo di calcio a 5- rimane comunque molto valida.
+                    <p class="paragrafo">Voto: 8.5</p>
+                    </p>
+                    <address id="a_sec">Via Bottazzi, 15 Aci Bonaccorsi (CT)</address>
+                    <p class="commento">Consigliato.</p>
+                    
+                    <img src="./images/campo_icampetti.jpg">
+                </div>
+      
+            </div>
+      
+            <div class="container">
+      
+                <div class="number">4.</div>
+                <div class="item">
+                    <h1 class="titolo">CENTRO SPORTIVO MILLENNIUM</h1>
+                    <p class="paragrafo">
+                    La struttura non è così moderna, ma hanno da poco messo il tappeto di erba sintetica nuovo.
+                    Vi è un campo da calcio a 7 e un campo da calcio a 5 e il personale è molto gentile.
+                    <p class="paragrafo">Voto: 7.5</p>
+                    </p>
+                    <address id="a_sec">Via Comunità Europea, 13 Catania</address>
+                    <p class="commento">Abbastanza consigliato.</p>
+                    
+                    <img src="./images/campo_millennium.jpg">
+                </div>
+      
+            </div>
+      
+                <div class="container">
+      
+                <div class="number">5.</div>
+                <div class="item">
+                    <h1 class="titolo">KOSS</h1>
+                    <p class="paragrafo">
+                    La struttura presenta un solo campo a 7 e l'erba sintetica non è nemmeno di eccelsa qualità;
+                    tuttavia, spesso fanno giocare anche più dell'ora per la quale si paga.
+                    <p class="paragrafo">Voto: 6.5</p>
+                    </p>
+                    <address id="a_sec">Via Francesco Mannino Cefaly, 2 Catania</address>
+                    <p class="commento">Se avete di meglio, evitate.</p>
+                    
+                    <img src="./images/campo_koss.jpg">
+                </div>
+      
+            </div>
+      
+        </section>
+
+        <form name = "search_content" id = "search_content">
+
+            <h1>Rest API</h1>
+            <label>Scegli: <input type = "text" name = "content" id = "content"></label>
+            <select name = "tipo" id = "tipo">
+                <option value="Weather">Weather</option>
+                <option value="Holidays">Holidays</option>
+            </select>
+            <label><input class="submit" type='submit'></label>
+
+        </form>
+
+        <article id = "response-view">
+            
+        </article>
+      
+        <footer class="f">
+            <address>Dipartimento di Ingegneria Elettrica, Elettronica e Informatica<br>Cittadella Universitaria - UniCT</address>
+            <p>Powered by <em>Dario Scuderi</em> (Matr. <strong>1000014560</strong>)</p>
+        </footer>
+
+    </body>
+
+</html>
